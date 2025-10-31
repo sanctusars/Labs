@@ -1,0 +1,6 @@
+import requests
+
+exch_rate = requests.get("https://bank.gov.ua/NBU_Exchange/exchange_site?start=20251025&end=20251031&valcode=eur&sort=exchangedate&order=desc&json")
+
+print(exch_rate)
+print(exch_rate.json())
